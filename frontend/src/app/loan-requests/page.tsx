@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { apiFetch } from "../../lib/api";
 import type { Tool } from "../../lib/loan-types";
+import { redirect } from "next/navigation";
 
 type LoanRequestsPageProps = { searchParams: Promise<{ toolId?: string }> };
 
